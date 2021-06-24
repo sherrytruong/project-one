@@ -2,7 +2,155 @@
 @import 'variables';
 @import 'mixins';
 
-body {
-    background: $primar-background-color;
+/* --- General and Headings --- */
 
+body {
+    background: $primary-background-color;
+    color: $primary-font-color;
+    font-family: $primary-font-family;
+    
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: $primary-font-color;
+}
+
+p {
+    font-family: $secondary-font-family;
+}
+
+.wrapper {
+    max-width: 1080px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+h1 {
+    text-transform: uppercase;
+    font-weight: 600;
+    width: 200px;
+}
+
+h1 span {
+    background: #FFF;
+    color: $secondary-accent-color;
+}
+
+h2 {
+    text-transform: uppercase;
+    font-weight: 400;
+}
+
+h3 {
+    text-transform: uppercase;
+    font-weight: 400;
+}
+
+h4 {
+    font-weight: 400;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+/* --- Header and Navigation --- */
+
+header {
+    background-image: url(../../the-restaurant-mall-assets/home-header.jpg);
+    background-size: contain;
+    background-position: center;
+    height: 100vh;
+}
+
+// sections {
+//     padding: 50px 0;
+// }
+
+.header-nav {
+    display: flex;
+    margin-top: 50px;
+    width: 50%;
+}
+
+nav li {
+    padding-right: 50px;
+}
+
+.header-nav span {
+    padding-bottom: 5px;
+    border-bottom: 2px solid $primary-accent-color;
+}
+
+
+/* --- About Section --- */
+
+.about-container {
+    background: $secondary-background-color;
+}
+
+
+
+/* --- Profile Section --- */
+
+
+
+/* --- Gift Section -- */
+
+.gift-container {
+    background: $secondary-background-color;
+}
+
+/* --- Picture Section -- */
+
+.picture-container {
+    background-image: url(../../the-restaurant-mall-assets/banner.jpg);
+}
+
+/* --- Spaces Section --- */
+
+.spaces-section {
+    padding: 50px 0;
+    background: $secondary-background-color;
+}
+
+/* --- Gallery Section --- */
+
+.gallery-section {
+    padding: 50px 0;
+}
+
+.gallery-container {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.gallery-container img {
+    padding: 0 10px;
+}
+
+/* --- Footer --- */
+
+footer {
+    background: $secondary-accent-color;
+    text-align: center;
+}
+
+footer p {
+    margin: 0;
+    padding: 10px;
+}
+
+
+
+* {
+    outline: red;
 }

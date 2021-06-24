@@ -472,8 +472,140 @@ html {
   overflow: hidden;
 }
 
-@primaryFontFamily : "Josefin Sans", sans-serif;
-@secondaryFontFamily : "Barlow", sans-serif;
+/* --- General and Headings --- */
 body {
   background: #171B0E;
+  color: #FFF;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: #FFF;
+}
+
+p {
+  font-family: "Barlow", sans-serif;
+}
+
+.wrapper {
+  max-width: 1080px;
+  width: 90%;
+  margin: 0 auto;
+}
+
+h1 {
+  text-transform: uppercase;
+  font-weight: 600;
+  width: 200px;
+}
+
+h1 span {
+  background: #FFF;
+  color: #000;
+}
+
+h2 {
+  text-transform: uppercase;
+  font-weight: 400;
+}
+
+h3 {
+  text-transform: uppercase;
+  font-weight: 400;
+}
+
+h4 {
+  font-weight: 400;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* --- Header and Navigation --- */
+header {
+  background-image: url(../../the-restaurant-mall-assets/home-header.jpg);
+  background-size: contain;
+  background-position: center;
+  height: 100vh;
+}
+
+.header-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 50px;
+  width: 50%;
+}
+
+nav li {
+  padding-right: 50px;
+}
+
+.header-nav span {
+  padding-bottom: 5px;
+  border-bottom: 2px solid #FFD300;
+}
+
+/* --- About Section --- */
+.about-container {
+  background: #2B331B;
+}
+
+/* --- Profile Section --- */
+/* --- Gift Section -- */
+.gift-container {
+  background: #2B331B;
+}
+
+/* --- Picture Section -- */
+.picture-container {
+  background-image: url(../../the-restaurant-mall-assets/banner.jpg);
+}
+
+/* --- Spaces Section --- */
+.spaces-section {
+  padding: 50px 0;
+  background: #2B331B;
+}
+
+/* --- Gallery Section --- */
+.gallery-section {
+  padding: 50px 0;
+}
+
+.gallery-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.gallery-container img {
+  padding: 0 10px;
+}
+
+/* --- Footer --- */
+footer {
+  background: #000;
+  text-align: center;
+}
+
+footer p {
+  margin: 0;
+  padding: 10px;
+}
+
+* {
+  outline: red;
 }
