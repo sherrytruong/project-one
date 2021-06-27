@@ -24,6 +24,9 @@ a {
 
 p {
     font-family: $secondary-font-family;
+    font-size: 20px;
+    letter-spacing: 1px;
+    line-height: 28px;
 }
 
 .wrapper {
@@ -35,6 +38,7 @@ p {
 h1 {
     text-transform: uppercase;
     font-weight: 600;
+    font-size: 69px;
     width: 200px;
 }
 
@@ -46,15 +50,20 @@ h1 span {
 h2 {
     text-transform: uppercase;
     font-weight: 400;
+    font-size: 45px;
+    margin: 0;
 }
 
 h3 {
     text-transform: uppercase;
     font-weight: 400;
+    font-size: 40px;
+    margin: 0;
 }
 
 h4 {
     font-weight: 400;
+    font-size: 40px;
 }
 
 img {
@@ -62,22 +71,62 @@ img {
     display: block;
 }
 
+.main-button {
+    text-transform: uppercase;
+    background: $primary-accent-color;
+    color: $secondary-accent-color;
+    padding: 10px;
+    line-height: 41.6px;
+    font-size: 22.4px;
+}
+
+.find-more-button {
+    text-transform: uppercase;
+    background: $secondary-accent-color;
+    color: $primary-font-color;
+    padding: 10px;
+    line-height: 41.6px;
+    font-size: 22.4px;
+}
+
+.special-heading {
+    color: $primary-accent-color;
+}
+
 /* --- Header and Navigation --- */
 
-header {
-    background-image: url(../../the-restaurant-mall-assets/home-header.jpg);
+.home-header {
+    background-image: url(../the-restaurant-mall-assets/home-header.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: top center;
+    height: 75vh;
+}
+
+.contact-header {
+    background-image: url(../the-restaurant-mall-assets/contact-header.jpg);
     background-size: contain;
     background-position: center;
     height: 100vh;
 }
 
-// sections {
-//     padding: 50px 0;
-// }
+.blog-header {
+    background-image: url(../the-restaurant-mall-assets/blog-header.jpg);
+    background-size: contain;
+    background-position: center;
+    height: 100vh;
+}
+
+.header-side-image img {
+    position: absolute; /* fix that */
+    right: 0;
+    top: 150px;
+    width: 50%;
+}
 
 .header-nav {
     display: flex;
-    margin-top: 50px;
+    padding-top: 50px;
     width: 50%;
 }
 
@@ -85,41 +134,126 @@ nav li {
     padding-right: 50px;
 }
 
+.header-nav a {
+    font-weight: 700;
+    font-size: 20px;
+    letter-spacing: 1px; 
+}
+
 .header-nav span {
     padding-bottom: 5px;
     border-bottom: 2px solid $primary-accent-color;
 }
 
-
 /* --- About Section --- */
 
-.about-container {
+.about-section {
     background: $secondary-background-color;
+    padding: 200px 0;
 }
 
+.about-container-first, 
+.about-container-second {
+    display: flex;
+}
 
+.about-container-first div,
+.about-container-second div {
+    width: calc(100% / 2);
+    margin: 0 30px;
+}
+
+* {
+    outline: 1px solid red;
+}
 
 /* --- Profile Section --- */
 
+.profile-section {
+    padding: 70px 0;
+}
 
+.burgers-text {
+    width: 50%;
+    float: right;
+    margin-bottom: 10px;
+}
+
+.something-new-text {
+    width: 50%;
+    float: left;
+    margin-top: 10px;
+    text-align: right;
+}
+
+.burgers-image {
+    float: left;
+    width: 40%;
+    position: relative;
+    top: -100px;
+}
+
+.something-new-image {
+    float: right;
+    width: 40%;
+    position: relative;
+    bottom: -100px;
+}
+
+.burgers-image img {
+    box-shadow: 15px 15px $primary-accent-color;
+    width: 100%;
+    object-fit: cover;
+}
+
+.something-new-image img {
+    box-shadow: -15px 15px $primary-accent-color;
+    width: 100%;
+    object-fit: cover;
+}
 
 /* --- Gift Section -- */
 
 .gift-container {
     background: $secondary-background-color;
+    padding: 100px 0;
+    text-align: center;
 }
 
 /* --- Picture Section -- */
 
 .picture-container {
-    background-image: url(../../the-restaurant-mall-assets/banner.jpg);
+    background-image: url(../the-restaurant-mall-assets/banner.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 350px;
 }
 
 /* --- Spaces Section --- */
 
 .spaces-section {
-    padding: 50px 0;
+    padding-top: 70px;
+    padding-bottom: 50px;
     background: $secondary-background-color;
+}
+
+.spaces-container {
+    display: flex;
+}
+
+.spaces-image {
+    height: 200px;
+    width: 100%;
+}
+
+.spaces-image img {
+    box-shadow: -15px 15px $primary-accent-color;
+    margin-left: 15px;
+}
+
+.spaces-text {
+    padding-left: 70px;
 }
 
 /* --- Gallery Section --- */
@@ -134,7 +268,7 @@ nav li {
 }
 
 .gallery-container img {
-    padding: 0 10px;
+    padding: 0 20px;
 }
 
 /* --- Footer --- */
@@ -149,8 +283,3 @@ footer p {
     padding: 10px;
 }
 
-
-
-* {
-    outline: red;
-}

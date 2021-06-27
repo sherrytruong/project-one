@@ -492,6 +492,9 @@ a {
 
 p {
   font-family: "Barlow", sans-serif;
+  font-size: 20px;
+  letter-spacing: 1px;
+  line-height: 28px;
 }
 
 .wrapper {
@@ -503,6 +506,7 @@ p {
 h1 {
   text-transform: uppercase;
   font-weight: 600;
+  font-size: 69px;
   width: 200px;
 }
 
@@ -514,15 +518,20 @@ h1 span {
 h2 {
   text-transform: uppercase;
   font-weight: 400;
+  font-size: 45px;
+  margin: 0;
 }
 
 h3 {
   text-transform: uppercase;
   font-weight: 400;
+  font-size: 40px;
+  margin: 0;
 }
 
 h4 {
   font-weight: 400;
+  font-size: 40px;
 }
 
 img {
@@ -530,24 +539,75 @@ img {
   display: block;
 }
 
+.main-button {
+  text-transform: uppercase;
+  background: #FFD300;
+  color: #000;
+  padding: 10px;
+  line-height: 41.6px;
+  font-size: 22.4px;
+}
+
+.find-more-button {
+  text-transform: uppercase;
+  background: #000;
+  color: #FFF;
+  padding: 10px;
+  line-height: 41.6px;
+  font-size: 22.4px;
+}
+
+.special-heading {
+  color: #FFD300;
+}
+
 /* --- Header and Navigation --- */
-header {
-  background-image: url(../../the-restaurant-mall-assets/home-header.jpg);
+.home-header {
+  background-image: url(../the-restaurant-mall-assets/home-header.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: top center;
+  height: 75vh;
+}
+
+.contact-header {
+  background-image: url(../the-restaurant-mall-assets/contact-header.jpg);
   background-size: contain;
   background-position: center;
   height: 100vh;
+}
+
+.blog-header {
+  background-image: url(../the-restaurant-mall-assets/blog-header.jpg);
+  background-size: contain;
+  background-position: center;
+  height: 100vh;
+}
+
+.header-side-image img {
+  position: absolute;
+  /* fix that */
+  right: 0;
+  top: 150px;
+  width: 50%;
 }
 
 .header-nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-top: 50px;
+  padding-top: 50px;
   width: 50%;
 }
 
 nav li {
   padding-right: 50px;
+}
+
+.header-nav a {
+  font-weight: 700;
+  font-size: 20px;
+  letter-spacing: 1px;
 }
 
 .header-nav span {
@@ -556,25 +616,118 @@ nav li {
 }
 
 /* --- About Section --- */
-.about-container {
+.about-section {
   background: #2B331B;
+  padding: 200px 0;
+}
+
+.about-container-first,
+.about-container-second {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.about-container-first div,
+.about-container-second div {
+  width: calc(100% / 2);
+  margin: 0 30px;
+}
+
+* {
+  outline: 1px solid red;
 }
 
 /* --- Profile Section --- */
+.profile-section {
+  padding: 70px 0;
+}
+
+.burgers-text {
+  width: 50%;
+  float: right;
+  margin-bottom: 10px;
+}
+
+.something-new-text {
+  width: 50%;
+  float: left;
+  margin-top: 10px;
+  text-align: right;
+}
+
+.burgers-image {
+  float: left;
+  width: 40%;
+  position: relative;
+  top: -100px;
+}
+
+.something-new-image {
+  float: right;
+  width: 40%;
+  position: relative;
+  bottom: -100px;
+}
+
+.burgers-image img {
+  -webkit-box-shadow: 15px 15px #FFD300;
+          box-shadow: 15px 15px #FFD300;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.something-new-image img {
+  -webkit-box-shadow: -15px 15px #FFD300;
+          box-shadow: -15px 15px #FFD300;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
 /* --- Gift Section -- */
 .gift-container {
   background: #2B331B;
+  padding: 100px 0;
+  text-align: center;
 }
 
 /* --- Picture Section -- */
 .picture-container {
-  background-image: url(../../the-restaurant-mall-assets/banner.jpg);
+  background-image: url(../the-restaurant-mall-assets/banner.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 350px;
 }
 
 /* --- Spaces Section --- */
 .spaces-section {
-  padding: 50px 0;
+  padding-top: 70px;
+  padding-bottom: 50px;
   background: #2B331B;
+}
+
+.spaces-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.spaces-image {
+  height: 200px;
+  width: 100%;
+}
+
+.spaces-image img {
+  -webkit-box-shadow: -15px 15px #FFD300;
+          box-shadow: -15px 15px #FFD300;
+  margin-left: 15px;
+}
+
+.spaces-text {
+  padding-left: 70px;
 }
 
 /* --- Gallery Section --- */
@@ -592,7 +745,7 @@ nav li {
 }
 
 .gallery-container img {
-  padding: 0 10px;
+  padding: 0 20px;
 }
 
 /* --- Footer --- */
@@ -604,8 +757,4 @@ footer {
 footer p {
   margin: 0;
   padding: 10px;
-}
-
-* {
-  outline: red;
 }

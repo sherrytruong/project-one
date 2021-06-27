@@ -11,12 +11,16 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Barlow&family=Josefin+Sans:wght@400;600;700&display=swap"
         rel="stylesheet">
+    <script src="https://kit.fontawesome.com/8e9de8bbe2.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
 
-    <header>
-        <!-- HEADER IMG NOT SHOWING?-->
+    <header class="home-header">
+        <div class="header-side-image">
+            <img src="./the-restaurant-mall-assets/home-box-header.png"
+                alt="A dish with a background showing the restaurant with diners">
+        </div>
         <div class="wrapper">
             <nav>
                 <ul class="header-nav">
@@ -27,80 +31,85 @@
                 </ul>
             </nav>
             <h1>The <span class="restaurant-heading">Restaurant</span> Mall</h1>
-            <div>
-                <img src="./the-restaurant-mall-assets/home-box-header.png"
-                    alt="A dish with a background showing the restaurant with diners">
-            </div>
         </div>
     </header>
 
     <main>
-        <section class="about-container">
+        <section class="about-section">
             <div class="wrapper">
-                <div>
-                    <i></i>
-                    <h2>Location</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet ipsa, consequatur nesciunt tenetur
-                        reiciendis molestias saepe quo. In delectus quo hic veniam aliquid minima voluptatibus, error,
-                        commodi nisi doloribus nemo.</p>
+                <div class="about-container-first">
+                    <div class="location-box">
+                        <h2>Location</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa quia, eveniet ut ipsam
+                            voluptate illo voluptatem accusantium nostrum repudiandae accusamus aut commodi ad vitae
+                            tempora.</p>
+                    </div>
+                    <div class="community-box">
+                        <h2>Community</h2>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quis dolor atque cupiditate ipsum
+                            eius quia non recusandae, enim laborum maxime consectetur explicabo impedit libero nesciunt.
+                        </p>
+                    </div>
                 </div>
-                <div>
-                    <i></i>
-                    <h2>Community</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi asperiores, consequatur quidem
-                        nihil suscipit sapiente repellendus ratione sed amet, animi explicabo nulla quis aperiam ipsam
-                        necessitatibus quisquam, labore incidunt repudiandae.</p>
-                </div>
-                <div>
-                    <i></i>
-                    <h2>Blog</h2>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laborum, maiores ut nam ratione, debitis
-                        voluptate iste natus optio incidunt sit sint modi voluptatem officiis cupiditate. Vitae quisquam
-                        libero est fuga.</p>
-                </div>
-                <div>
-                    <i></i>
-                    <h2>Get In Touch</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet ipsa, consequatur nesciunt tenetur
-                        reiciendis
-                        molestias saepe quo. In delectus quo hic veniam aliquid minima voluptatibus, error, commodi nisi
-                        doloribus nemo.</p>
+                <div class="about-container-second">
+                    <div class="blog-box">
+                        <i></i>
+                        <h2>Blog</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Libero quo dicta ea doloribus eius,
+                            magnam minus voluptas officiis, accusantium tempore illum ut reprehenderit, deserunt iure.
+                        </p>
+                    </div>
+                    <div class="get-in-touch-box">
+                        <i></i>
+                        <h2>Get In Touch</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad assumenda delectus adipisci
+                            ducimus recusandae fuga officia! Quidem adipisci dicta eveniet corrupti dolor officiis quasi
+                            fugiat.</p>
+                    </div>
                 </div>
             </div>
         </section>
 
-        <section class="profile-container">
-            <div class="wrapper">
-                <div>
+
+        <section class="profile-section">
+            <div class="clearfix">
+                <div class="wrapper">
+                    <div class="burgers-text">
+                        <h3>Best Burgers</h3>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorem facilis inventore dolore
+                        molestias at doloribus quisquam temporibus harum qui? Dolor perspiciatis voluptates blanditiis consequatur eveniet dolore excepturi.</p>
+                        <a href="#" class="main-button">Read More</a>
+                    </div>
+                </div>
+                <div class="burgers-image">
                     <img src="./the-restaurant-mall-assets/left-image.jpg" alt="Plate of burger and fries">
                 </div>
-                <div>
-                    <h3>Best Burgers</h3>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorem facilis inventore dolore molestias
-                        at doloribus quisquam temporibus harum qui? Dolor perspiciatis voluptates blanditiis consequatur
-                        eveniet dolore excepturi.</p>
-                    <a href="#">Read More</a>
-                </div>
-                <div>
+            </div>
+
+            <div class="clearfix">
+                <div class="something-new-image">
                     <img src="./the-restaurant-mall-assets/right-image.jpg" alt="Colourful plate of food">
                 </div>
-                <div>
-                    <h3>Try Something New</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo, vitae aspernatur dolore maxime officia
-                        eaque possimus, ipsa, et corrupti ex quidem in earum aperiam omnis ratione distinctio repudiandae
-                        quod repellat.</p>
-                    <a href="#">Read More</a>
+                <div class="wrapper">
+                    <div class="something-new-text">
+                        <h3>Try Something New</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo, vitae aspernatur dolore maxime officia eaque possimus, ipsa, et corrupti ex quidem in earum aperiam omnis ratione distinctio repudiandae quod repellat.</p>
+                        <a href="#" class="main-button">Read More</a>
+                    </div>
                 </div>
             </div>
         </section>
+
 
         <section class="gift-container">
             <div class="wrapper">
-                <h2><span>Win a $100 Gift Card</span></h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta recusandae itaque debitis adipisci odit,
-                harum, a porro deserunt tenetur perspiciatis perferendis dolore error dolor quasi animi. Nemo delectus
-                doloribus unde!</p>
-                <a href="#">Find Out More</a>
+                <h2 class="special-heading">Win a $100 Gift Card</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta recusandae itaque debitis adipisci
+                    odit,
+                    harum, a porro deserunt tenetur perspiciatis perferendis dolore error dolor quasi animi. Nemo
+                    delectus
+                    doloribus unde!</p>
+                <a href="#" class="find-more-button">Find Out More</a>
             </div>
         </section>
 
@@ -109,17 +118,17 @@
 
         <section class="spaces-section">
             <div class="wrapper">
-                <div>
-                    <h2><span>Bringing Nature in Spaces</span></h2>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias saepe consectetur animi quod?
-                        Perspiciatis labore provident reprehenderit quos beatae quasi magni! Quaerat pariatur, aliquid neque
-                        quis eum provident explicabo molestiae. Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Rerum tempora fugit praesentium. </p>
-                    <a href="#">Find Out More</a>
+                <div class="spaces-container">
+                    <div class="spaces-image">
+                        <img src="./the-restaurant-mall-assets/square-image.jpg"
+                            alt="Plants hanging from skylight inside restaurant">
+                    </div>
+                    <div class="spaces-text">
+                        <h2 class="special-heading">Bringing Nature in Spaces</span></h2>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias saepe consectetur animi quod? Perspiciatis labore provident reprehenderit quos beatae quasi magni! Quaerat pariatur aliquid neque, quis eum provident explicabo molestiae. Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum tempora fugit praesentium. </p>
+                        <a href="#" class="find-more-button">Find Out More</a>
+                    </div>
                 </div>
-                <img src="./the-restaurant-mall-assets/square-image.jpg"
-                    alt="Plants hanging from skylight inside restaurant">
-            </div>
         </section>
 
         <section class="gallery-section wrapper">
