@@ -538,6 +538,11 @@ h4 {
   margin: 0;
 }
 
+h5 {
+  color: #FFD300;
+  font-size: 20px;
+}
+
 img {
   max-width: 100%;
   display: block;
@@ -587,7 +592,7 @@ img {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  height: 50vh;
+  height: 55vh;
 }
 
 .header-side-image img {
@@ -773,11 +778,34 @@ footer p {
 
 aside {
   width: 35%;
-  margin: 30px;
+  margin: 50px 50px 0 0;
 }
 
 article {
   width: 65%;
+}
+
+.side-container {
+  background: #2B331B;
+}
+
+.blog-side-image {
+  position: absolute;
+  z-index: 1;
+}
+
+.blog-side-image img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+}
+
+.blog-side-text {
+  background: #171B0E;
+  padding: 350px 20px 20px;
+  width: 75%;
+  position: relative;
+  margin-left: 30px;
 }
 
 .blog-post {
@@ -803,13 +831,88 @@ article {
 
 aside ul {
   list-style: inside disc;
+  font-family: "Barlow", sans-serif;
+  font-size: 20px;
+  letter-spacing: 1px;
+  line-height: 28px;
 }
 
-/* ===== CONTACT PART ==== */
-.contact-info-container {
+.date {
+  font-weight: 700;
+}
+
+.comment-one {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+.comment-one-pic {
+  width: calc(100% / 2);
+}
+
+.comment-two {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+/* ===== CONTACT PART ==== */
+.contact-flex-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.contact-info-container {
+  background: #2B331B;
+}
+
+.social-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+input {
+  border-bottom: 3px solid #FFD300;
+}
+
+input::-webkit-input-placeholder {
+  background: #2B331B;
+  color: #FFF;
+}
+
+input::-moz-placeholder {
+  background: #2B331B;
+  color: #FFF;
+}
+
+input:-ms-input-placeholder {
+  background: #2B331B;
+  color: #FFF;
+}
+
+input::-ms-input-placeholder {
+  background: #2B331B;
+  color: #FFF;
+}
+
+input::placeholder {
+  background: #2B331B;
+  color: #FFF;
+}
+
+textarea {
+  background: #2B331B;
+  color: #FFF;
+  border: 3px solid #FFD300;
+}
+
+button {
+  text-transform: uppercase;
+  background: #FFD300;
+  color: #000;
 }
 
 * {
