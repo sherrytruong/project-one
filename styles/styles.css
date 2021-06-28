@@ -507,12 +507,13 @@ h1 {
   text-transform: uppercase;
   font-weight: 600;
   font-size: 69px;
-  width: 200px;
 }
 
 h1 span {
   background: #FFF;
   color: #000;
+  display: block;
+  width: 460px;
 }
 
 h2 {
@@ -530,8 +531,11 @@ h3 {
 }
 
 h4 {
+  text-transform: uppercase;
   font-weight: 400;
-  font-size: 40px;
+  font-size: 25px;
+  color: #FFD300;
+  margin: 0;
 }
 
 img {
@@ -564,29 +568,30 @@ img {
 /* --- Header and Navigation --- */
 .home-header {
   background-image: url(../the-restaurant-mall-assets/home-header.jpg);
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
-  background-position: top center;
-  height: 75vh;
-}
-
-.contact-header {
-  background-image: url(../the-restaurant-mall-assets/contact-header.jpg);
-  background-size: contain;
   background-position: center;
-  height: 100vh;
+  height: 75vh;
 }
 
 .blog-header {
   background-image: url(../the-restaurant-mall-assets/blog-header.jpg);
-  background-size: contain;
+  background-size: cover;
+  background-repeat: no-repeat;
   background-position: center;
-  height: 100vh;
+  height: 60vh;
+}
+
+.contact-header {
+  background-image: url(../the-restaurant-mall-assets/contact-header.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 50vh;
 }
 
 .header-side-image img {
   position: absolute;
-  /* fix that */
   right: 0;
   top: 150px;
   width: 50%;
@@ -632,10 +637,6 @@ nav li {
 .about-container-second div {
   width: calc(100% / 2);
   margin: 0 30px;
-}
-
-* {
-  outline: 1px solid red;
 }
 
 /* --- Profile Section --- */
@@ -757,4 +758,60 @@ footer {
 footer p {
   margin: 0;
   padding: 10px;
+}
+
+/* ===== BLOG PART ==== */
+.blog-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background: #2B331B;
+}
+
+aside {
+  width: 35%;
+  margin: 30px;
+}
+
+article {
+  width: 65%;
+}
+
+.blog-post {
+  border: 5px solid #FFD300;
+  border-right: 0;
+  margin-left: 15px;
+  padding: 40px 50px;
+}
+
+.blog-post-image {
+  margin-left: 30px;
+  position: relative;
+  top: -50px;
+}
+
+.blog-post-image img {
+  -webkit-box-shadow: -15px 15px #FFD300;
+          box-shadow: -15px 15px #FFD300;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+aside ul {
+  list-style: inside disc;
+}
+
+/* ===== CONTACT PART ==== */
+.contact-info-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+* {
+  outline: 1px solid red;
 }

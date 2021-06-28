@@ -39,12 +39,13 @@ h1 {
     text-transform: uppercase;
     font-weight: 600;
     font-size: 69px;
-    width: 200px;
 }
 
 h1 span {
     background: #FFF;
     color: $secondary-accent-color;
+    display: block;
+    width: 460px;
 }
 
 h2 {
@@ -62,8 +63,11 @@ h3 {
 }
 
 h4 {
+    text-transform: uppercase;
     font-weight: 400;
-    font-size: 40px;
+    font-size: 25px;
+    color: $primary-accent-color;
+    margin: 0;
 }
 
 img {
@@ -97,28 +101,30 @@ img {
 
 .home-header {
     background-image: url(../the-restaurant-mall-assets/home-header.jpg);
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
-    background-position: top center;
-    height: 75vh;
-}
-
-.contact-header {
-    background-image: url(../the-restaurant-mall-assets/contact-header.jpg);
-    background-size: contain;
     background-position: center;
-    height: 100vh;
+    height: 75vh;
 }
 
 .blog-header {
     background-image: url(../the-restaurant-mall-assets/blog-header.jpg);
-    background-size: contain;
+    background-size: cover;
+    background-repeat: no-repeat;
     background-position: center;
-    height: 100vh;
+    height: 60vh;
+}
+
+.contact-header {
+    background-image: url(../the-restaurant-mall-assets/contact-header.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 50vh;
 }
 
 .header-side-image img {
-    position: absolute; /* fix that */
+    position: absolute;
     right: 0;
     top: 150px;
     width: 50%;
@@ -163,9 +169,6 @@ nav li {
     margin: 0 30px;
 }
 
-* {
-    outline: 1px solid red;
-}
 
 /* --- Profile Section --- */
 
@@ -283,3 +286,83 @@ footer p {
     padding: 10px;
 }
 
+
+
+
+/* ===== BLOG PART ==== */
+
+.blog-container {
+    display: flex;
+    justify-content: space-between;
+    background: $secondary-background-color;
+}
+
+aside {
+    width: 35%;
+    margin: 30px;
+}
+
+article {
+    width: 65%;
+}
+
+.side-container {
+    background: $secondary-background-color;
+    width: 500px;
+    color: pink;
+}
+
+.blog-side-image {
+    width: 350px;
+
+.blog-side-image img {
+    object-fit: cover;
+    width: 100%;
+}
+
+.blog-side-text {
+    background: $primary-background-color;
+}
+
+.blog-post {
+    border: 5px solid $primary-accent-color;
+    border-right: 0;
+    margin-left: 15px;
+    padding: 40px 50px;
+}
+
+.blog-post-image {
+    margin-left: 30px;
+    position: relative;
+    top: -50px;
+}
+
+.blog-post-image img {
+    box-shadow: -15px 15px $primary-accent-color;
+    width: 100%;
+    object-fit: cover;
+}
+
+aside ul {
+    list-style: inside disc;
+}
+
+.date {
+    font-weight: 700;
+}
+
+
+
+/* ===== CONTACT PART ==== */
+
+.contact-info-container {
+    display: flex;
+}
+
+
+
+
+
+* {
+    outline: 1px solid red;
+}
