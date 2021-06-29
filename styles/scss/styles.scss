@@ -125,7 +125,7 @@ img {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    height: 55vh;
+    height: 60vh;
 }
 
 .header-side-image img {
@@ -388,20 +388,53 @@ aside ul {
 
 .contact-flex-container {
     display: flex;
+    background: $secondary-background-color;
 }
 
 .contact-info-container {
-    background: $secondary-background-color;
-
+    margin: 20px;
 }
 
 .social-links {
     display: flex;
+}
+
+.social-links li a {
+    color: $primary-accent-color;
+    padding: 20px 10px;
+}
+
+.contact-form-container {
+    position: absolute;
+    z-index: 1;
+    right: 50px;
+    bottom: 100px;
+    width: 50%;
 
 }
 
-input {
-    border-bottom: 3px solid $primary-accent-color;
+.contact-form {
+    background: $primary-background-color;
+    box-shadow: 15px 15px $primary-accent-color;
+    padding: 25px;
+}
+
+.contact-form-name {
+    width: 50%;
+    padding-right: 10px;
+}
+
+.contact-form-email {
+    width: 50%;
+}
+
+input[type=text],
+input[type=email] {
+    border: none;
+    border-bottom: 2px solid $primary-accent-color;
+    width: 100%;
+    padding: 10px;
+    background: transparent;
     // opacity: 100%;
 }
 
@@ -411,16 +444,27 @@ input::placeholder {
 }
 
 textarea {
-    background: $secondary-background-color;
+    background: transparent;
     color: $primary-font-color;
-    border: 3px solid $primary-accent-color;
+    border: none;
+    border: 2px solid $primary-accent-color;
+    width: 100%;
+    margin-top: 25px;
+    padding: 10px;
+    height: 200px;
 }
 
 button {
+    border: none;
     text-transform: uppercase;
+    font-family: $primary-font-family;
+    font-size: 22.4px;
+    line-height: 41.6px;
+    text-align: center;
     background: $primary-accent-color;
     color: $secondary-accent-color;
-
+    width: 100%;
+    margin-top: 25px;
 }
 
 
@@ -430,3 +474,5 @@ button {
 * {
     outline: 1px solid red;
 }
+
+@import 'media-queries';

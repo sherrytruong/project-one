@@ -592,7 +592,7 @@ img {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  height: 55vh;
+  height: 60vh;
 }
 
 .header-side-image img {
@@ -862,10 +862,11 @@ aside ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  background: #2B331B;
 }
 
 .contact-info-container {
-  background: #2B331B;
+  margin: 20px;
 }
 
 .social-links {
@@ -874,8 +875,42 @@ aside ul {
   display: flex;
 }
 
-input {
-  border-bottom: 3px solid #FFD300;
+.social-links li a {
+  color: #FFD300;
+  padding: 20px 10px;
+}
+
+.contact-form-container {
+  position: absolute;
+  z-index: 1;
+  right: 50px;
+  bottom: 100px;
+  width: 50%;
+}
+
+.contact-form {
+  background: #171B0E;
+  -webkit-box-shadow: 15px 15px #FFD300;
+          box-shadow: 15px 15px #FFD300;
+  padding: 25px;
+}
+
+.contact-form-name {
+  width: 50%;
+  padding-right: 10px;
+}
+
+.contact-form-email {
+  width: 50%;
+}
+
+input[type=text],
+input[type=email] {
+  border: none;
+  border-bottom: 2px solid #FFD300;
+  width: 100%;
+  padding: 10px;
+  background: transparent;
 }
 
 input::-webkit-input-placeholder {
@@ -904,15 +939,27 @@ input::placeholder {
 }
 
 textarea {
-  background: #2B331B;
+  background: transparent;
   color: #FFF;
-  border: 3px solid #FFD300;
+  border: none;
+  border: 2px solid #FFD300;
+  width: 100%;
+  margin-top: 25px;
+  padding: 10px;
+  height: 200px;
 }
 
 button {
+  border: none;
   text-transform: uppercase;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 22.4px;
+  line-height: 41.6px;
+  text-align: center;
   background: #FFD300;
   color: #000;
+  width: 100%;
+  margin-top: 25px;
 }
 
 * {
