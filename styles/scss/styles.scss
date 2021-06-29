@@ -73,6 +73,7 @@ h4 {
 h5 {
     color: $primary-accent-color;
     font-size: 20px;
+    margin: 0;
 }
 
 img {
@@ -125,7 +126,7 @@ img {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    height: 60vh;
+    height: 50vh;
 }
 
 .header-side-image img {
@@ -300,6 +301,7 @@ footer p {
     display: flex;
     justify-content: space-between;
     background: $secondary-background-color;
+    padding-bottom: 50px;
 }
 
 aside {
@@ -313,45 +315,48 @@ article {
 
 .side-container {
     background: $secondary-background-color;
-
+    position: relative;
 }
 
 .blog-side-image {
-    position: absolute;
+    position: relative;
     z-index: 1;
-    
+
 }
 
 .blog-side-image img {
     object-fit: cover;
     width: 100%;
+    box-shadow: 15px 15px $primary-background-color
 }
 
 .blog-side-text {
     background: $primary-background-color;
-    padding: 350px 20px 20px;
-    width: 75%;
-    position: relative;
-    margin-left: 30px;
-}
-
-.blog-post {
-    border: 5px solid $primary-accent-color;
-    border-right: 0;
+    padding: 30px;
     margin-left: 15px;
-    padding: 40px 50px;
+    margin-right: -15px;
 }
 
 .blog-post-image {
     margin-left: 30px;
     position: relative;
-    top: -50px;
+    top: -130px;
 }
 
 .blog-post-image img {
     box-shadow: -15px 15px $primary-accent-color;
     width: 100%;
     object-fit: cover;
+}
+
+.blog-post {
+    border: 5px solid $primary-accent-color;
+    border-top: 0;
+    border-right: 0;
+    margin-left: 15px;
+    padding: 40px 50px;
+    position: relative;
+    top: -115px;
 }
 
 aside ul {
@@ -366,20 +371,42 @@ aside ul {
     font-weight: 700;
 }
 
-.comment-one {
-    display: flex;
-
-
+.comments-container {
+    padding: 0px 49px 10px 67px;
 }
 
-.comment-one-pic {
-    width: calc(100% / 2);
-}
-
+.comment-one,
 .comment-two {
     display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
 }
 
+.comment-one > div:first-child,
+.comment-two > div:first-child {
+    margin-right: 20px;
+}
+
+.comment-one > div:nth-child(2),
+.comment-two > div:nth-child(2)  {
+    width: 90%;
+}
+
+.blog-form-container {
+    padding: 0px 49px 50px 67px;
+}
+
+.blog-form-name {
+    width: calc((100% / 2) - 10px);
+    display: inline-block;
+    margin-right: 5px;
+}
+
+.blog-form-email {
+    width: calc((100% / 2) - 10px);
+    display: inline-block;
+    margin-left: 9px;
+}
 
 
 /* ===== CONTACT PART ==== */
@@ -388,11 +415,12 @@ aside ul {
 
 .contact-flex-container {
     display: flex;
+    justify-content: space-between;
     background: $secondary-background-color;
 }
 
 .contact-info-container {
-    margin: 20px;
+    margin: 50px 100px;
 }
 
 .social-links {
@@ -401,15 +429,34 @@ aside ul {
 
 .social-links li a {
     color: $primary-accent-color;
-    padding: 20px 10px;
+    padding-right: 20px;
+    margin-bottom: 20px;
 }
 
+address {
+    font-style: normal;
+}
+
+address p {
+    margin: 0;
+}
+
+address a {
+    font-family: $secondary-font-family;
+    font-size: 20px;
+    letter-spacing: 1px;
+    line-height: 28px;
+    display: block;
+}
+
+address a:first-child {
+    margin-bottom: 10px;
+}
+
+
+
 .contact-form-container {
-    position: absolute;
-    z-index: 1;
-    right: 50px;
-    bottom: 100px;
-    width: 50%;
+    margin-left: 10px;
 
 }
 
@@ -417,15 +464,23 @@ aside ul {
     background: $primary-background-color;
     box-shadow: 15px 15px $primary-accent-color;
     padding: 25px;
+    position: absolute;
+    top: 30%;
+    right: 50px;
+    width: 50%;
 }
 
 .contact-form-name {
-    width: 50%;
-    padding-right: 10px;
+    width: calc((100% / 2) - 10px);
+    display: inline-block;
+    margin-right: 5px;
 }
 
 .contact-form-email {
-    width: 50%;
+    width: calc((100% / 2) - 10px);
+    display: inline-block;
+    margin-left: 9px;
+    background: $primary-background-color;
 }
 
 input[type=text],
@@ -433,25 +488,36 @@ input[type=email] {
     border: none;
     border-bottom: 2px solid $primary-accent-color;
     width: 100%;
-    padding: 10px;
     background: transparent;
-    // opacity: 100%;
+    padding: 10px;
+    color: $primary-font-color;
+    font-family: $secondary-font-family;
+    font-size: 20px;
+    letter-spacing: 1px;
+    line-height: 28px;
 }
 
 input::placeholder {
-    background: $secondary-background-color;
-    color: $primary-font-color;
-}
-
-textarea {
     background: transparent;
     color: $primary-font-color;
+    opacity: 1;
+}
+
+textarea,
+textarea::placeholder {
+    background: transparent;
+    color: $primary-font-color;
+    opacity: 1;
     border: none;
     border: 2px solid $primary-accent-color;
     width: 100%;
     margin-top: 25px;
     padding: 10px;
     height: 200px;
+    font-family: $secondary-font-family;
+    font-size: 20px;
+    letter-spacing: 1px;
+    line-height: 28px;
 }
 
 button {
@@ -474,5 +540,6 @@ button {
 * {
     outline: 1px solid red;
 }
+
 
 @import 'media-queries';
