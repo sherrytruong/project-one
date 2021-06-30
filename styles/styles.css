@@ -928,44 +928,40 @@ aside ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  /* ------------------------------- 
-  MEDIA QUERIES
-  ------------------------------- */
-  /* ------------------------------- 
-  Portrait tablet and small desktops 
-  ------------------------------- */
-  /* ------------------------------- 
-  Landscape phone to portrait tablet 
-  ------------------------------- */
-  /* -------------------------------
-  Landscape phones and down 
-   ------------------------------- */
 }
-.social-links .social-links li a {
+
+.social-links li a {
   color: #FFD300;
   padding-right: 20px;
+  margin-bottom: 20px;
   font-size: 25px;
 }
-.social-links address {
+
+address {
   font-style: normal;
 }
-.social-links address p {
+
+address p {
   margin: 0;
 }
-.social-links address a {
+
+address a {
   font-family: "Barlow", sans-serif;
   font-size: 20px;
   letter-spacing: 1px;
   line-height: 28px;
   display: block;
 }
-.social-links address a:first-child {
+
+address a:first-child {
   margin-bottom: 30px;
 }
-.social-links .contact-form-container {
+
+.contact-form-container {
   margin-left: 10px;
 }
-.social-links .contact-form {
+
+.contact-form {
   background: #171B0E;
   -webkit-box-shadow: 15px 15px #FFD300;
           box-shadow: 15px 15px #FFD300;
@@ -975,18 +971,21 @@ aside ul {
   right: 50px;
   width: 50%;
 }
-.social-links .contact-form-name {
+
+.contact-form-name {
   width: calc((100% / 2) - 10px);
   display: inline-block;
   margin-right: 5px;
 }
-.social-links .contact-form-email {
+
+.contact-form-email {
   width: calc((100% / 2) - 10px);
   display: inline-block;
   margin-left: 9px;
 }
-.social-links input[type=text],
-.social-links input[type=email] {
+
+input[type=text],
+input[type=email] {
   border: none;
   border-bottom: 2px solid #FFD300;
   width: 100%;
@@ -999,46 +998,38 @@ aside ul {
   line-height: 28px;
   margin-bottom: 10px;
 }
-.social-links input::-webkit-input-placeholder {
+
+input::-webkit-input-placeholder {
   background: transparent;
   color: #FFF;
   opacity: 1;
 }
-.social-links input::-moz-placeholder {
+
+input::-moz-placeholder {
   background: transparent;
   color: #FFF;
   opacity: 1;
 }
-.social-links input:-ms-input-placeholder {
+
+input:-ms-input-placeholder {
   background: transparent;
   color: #FFF;
   opacity: 1;
 }
-.social-links input::-ms-input-placeholder {
+
+input::-ms-input-placeholder {
   background: transparent;
   color: #FFF;
   opacity: 1;
 }
-.social-links input::placeholder {
+
+input::placeholder {
   background: transparent;
   color: #FFF;
   opacity: 1;
 }
-.social-links textarea::-webkit-input-placeholder {
-  background: transparent;
-  color: #FFF;
-  opacity: 1;
-  border: none;
-  border: 2px solid #FFD300;
-  width: 100%;
-  padding: 10px;
-  height: 200px;
-  font-family: "Barlow", sans-serif;
-  font-size: 20px;
-  letter-spacing: 1px;
-  line-height: 28px;
-}
-.social-links textarea::-moz-placeholder {
+
+textarea::-webkit-input-placeholder {
   background: transparent;
   color: #FFF;
   opacity: 1;
@@ -1052,7 +1043,8 @@ aside ul {
   letter-spacing: 1px;
   line-height: 28px;
 }
-.social-links textarea:-ms-input-placeholder {
+
+textarea::-moz-placeholder {
   background: transparent;
   color: #FFF;
   opacity: 1;
@@ -1066,7 +1058,8 @@ aside ul {
   letter-spacing: 1px;
   line-height: 28px;
 }
-.social-links textarea::-ms-input-placeholder {
+
+textarea:-ms-input-placeholder {
   background: transparent;
   color: #FFF;
   opacity: 1;
@@ -1080,8 +1073,8 @@ aside ul {
   letter-spacing: 1px;
   line-height: 28px;
 }
-.social-links textarea,
-.social-links textarea::placeholder {
+
+textarea::-ms-input-placeholder {
   background: transparent;
   color: #FFF;
   opacity: 1;
@@ -1095,7 +1088,24 @@ aside ul {
   letter-spacing: 1px;
   line-height: 28px;
 }
-.social-links button {
+
+textarea,
+textarea::placeholder {
+  background: transparent;
+  color: #FFF;
+  opacity: 1;
+  border: none;
+  border: 2px solid #FFD300;
+  width: 100%;
+  padding: 10px;
+  height: 200px;
+  font-family: "Barlow", sans-serif;
+  font-size: 20px;
+  letter-spacing: 1px;
+  line-height: 28px;
+}
+
+button[type=submit] {
   border: none;
   text-transform: uppercase;
   font-family: "Josefin Sans", sans-serif;
@@ -1107,34 +1117,48 @@ aside ul {
   margin-top: 10px;
   padding: 5px 0;
 }
+
+/* ------------------------------- 
+MEDIA QUERIES
+------------------------------- */
+/* ------------------------------- 
+Portrait tablet and small desktops 
+------------------------------- */
 @media (max-width: 940px) {
-  .social-links {
-    /* --- About Section --- */
-  }
-  .social-links h1 {
+  h1 {
     font-size: 52px;
   }
-  .social-links h1 span {
+
+  h1 span {
     width: 350px;
   }
-  .social-links .home-header {
+
+  .home-header {
     height: 100vh;
   }
-  .social-links .about-section {
+
+  /* --- About Section --- */
+  .about-section {
     padding: 100px 0;
   }
 }
+/* ------------------------------- 
+Landscape phone to portrait tablet 
+------------------------------- */
 @media (max-width: 768px) {
-  .social-links {
-    /* --- About Section --- */
-  }
-  .social-links h1 {
+  h1 {
     font-size: 40px;
   }
-  .social-links h1 span {
+
+  h1 span {
     width: 270px;
   }
-  .social-links .about-section {
+
+  /* --- About Section --- */
+  .about-section {
     padding: 100px 0;
   }
 }
+/* -------------------------------
+Landscape phones and down 
+ ------------------------------- */

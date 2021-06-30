@@ -1,66 +1,55 @@
 @import 'setup';
 @import 'variables';
-
+@import 'mixins';
 /* --- General and Headings --- */
-
 body {
     background: $primary-background-color;
     color: $primary-font-color;
     font-family: $primary-font-family;
-    
 }
-
 ul {
     list-style: none;
     padding: 0;
     margin: 0;
 }
-
 a {
     text-decoration: none;
     color: $primary-font-color;
 }
-
 p {
     font-family: $secondary-font-family;
     font-size: 20px;
     letter-spacing: 1px;
     line-height: 28px;
 }
-
 .wrapper {
     max-width: 1080px;
     width: 90%;
     margin: 0 auto;
 }
-
 h1 {
     text-transform: uppercase;
     font-weight: 600;
     font-size: 69px;
 }
-
 h1 span {
     background: #FFF;
     color: $secondary-accent-color;
     display: block;
     width: 460px;
 }
-
 h2 {
     text-transform: uppercase;
     font-weight: 400;
     font-size: 45px;
     margin: 0;
 }
-
 h3 {
     text-transform: uppercase;
     font-weight: 400;
     font-size: 40px;
     margin: 0;
 }
-
 h4 {
     text-transform: uppercase;
     font-weight: 400;
@@ -68,18 +57,15 @@ h4 {
     color: $primary-accent-color;
     margin: 0;
 }
-
 h5 {
     color: $primary-accent-color;
     font-size: 20px;
     margin: 0;
 }
-
 img {
     max-width: 100%;
     display: block;
 }
-
 .main-button {
     text-transform: uppercase;
     background: $primary-accent-color;
@@ -88,7 +74,6 @@ img {
     line-height: 41.6px;
     font-size: 22.4px;
 }
-
 .find-more-button {
     text-transform: uppercase;
     background: $secondary-accent-color;
@@ -97,13 +82,10 @@ img {
     line-height: 41.6px;
     font-size: 22.4px;
 }
-
 .special-heading {
     color: $primary-accent-color;
 }
-
 /* --- Header and Navigation --- */
-
 .home-header {
     background-image: url(../the-restaurant-mall-assets/home-header.jpg);
     background-size: cover;
@@ -111,7 +93,6 @@ img {
     background-position: center;
     height: 75vh;
 }
-
 .blog-header {
     background-image: url(../the-restaurant-mall-assets/blog-header.jpg);
     background-size: cover;
@@ -119,7 +100,6 @@ img {
     background-position: center;
     height: 60vh;
 }
-
 .contact-header {
     background-image: url(../the-restaurant-mall-assets/contact-header.jpg);
     background-size: cover;
@@ -127,54 +107,44 @@ img {
     background-position: center;
     height: 50vh;
 }
-
 .header-side-image {
     position: absolute;
     right: 0;
     top: 100px;
     width: 44%;
 }
-
 .header-nav {
     display: flex;
     padding-top: 50px;
     width: 50%;
 }
-
 nav li {
     padding-right: 50px;
 }
-
 .header-nav a {
     font-weight: 700;
     font-size: 20px;
     letter-spacing: 1px; 
 }
-
 .header-nav span {
     padding-bottom: 5px;
     border-bottom: 2px solid $primary-accent-color;
 }
-
 /* --- About Section --- */
-
 .about-section {
     background: $secondary-background-color;
     padding: 190px 0;
 }
-
 .about-container-first, 
 .about-container-second {
     display: flex;
 }
-
 .about-container-first div,
 .about-container-second div {
     width: calc(100% / 2);
     margin: 0 30px;
     position: relative;
 }
-
 .fas {
     background: $primary-accent-color;
     color: $secondary-accent-color;
@@ -187,24 +157,19 @@ nav li {
     position: absolute;
     left: -85px;
 }
-
 * {
     outline: 1px red solid;
 }
-
 /* --- Profile Section --- */
-
 .profile-section {
     padding: 70px 0;
 }
-
 .burgers-text {
     width: 50%;
     float: right;
     margin-bottom: 10px;
     padding-left: 20px;
 }
-
 .something-new-text {
     width: 50%;
     float: left;
@@ -212,43 +177,35 @@ nav li {
     text-align: right;
     padding-right: 20px;
 }
-
 .burgers-image {
     float: left;
     width: 40%;
     position: relative;
     top: -100px;
 }
-
 .something-new-image {
     float: right;
     width: 40%;
     position: relative;
     bottom: -100px;
 }
-
 .burgers-image img {
     box-shadow: 15px 15px $primary-accent-color;
     width: 100%;
     object-fit: cover;
 }
-
 .something-new-image img {
     box-shadow: -15px 15px $primary-accent-color;
     width: 100%;
     object-fit: cover;
 }
-
 /* --- Gift Section -- */
-
 .gift-container {
     background: $secondary-background-color;
     padding: 100px 0;
     text-align: center;
 }
-
 /* --- Picture Section -- */
-
 .picture-container {
     background-image: url(../the-restaurant-mall-assets/banner.jpg);
     background-size: cover;
@@ -256,117 +213,89 @@ nav li {
     background-repeat: no-repeat;
     height: 350px;
 }
-
 /* --- Spaces Section --- */
-
 .spaces-section {
     padding-top: 70px;
     padding-bottom: 50px;
     background: $secondary-background-color;
 }
-
 .spaces-container {
     display: flex;
 }
-
 .spaces-image {
     height: 200px;
     width: 100%;
 }
-
 .spaces-image img {
     box-shadow: -15px 15px $primary-accent-color;
     margin-left: 15px;
 }
-
 .spaces-text {
     padding-left: 70px;
 }
-
 /* --- Gallery Section --- */
-
 .gallery-section {
     padding: 50px 0;
 }
-
 .gallery-container {
     display: flex;
     justify-content: space-evenly;
 }
-
 .gallery-container img {
     padding: 0 20px;
 }
-
 /* --- Footer --- */
-
 footer {
     background: $secondary-accent-color;
     text-align: center;
 }
-
 footer p {
     margin: 0;
     padding: 10px;
 }
-
-
-
-
 /* ===== BLOG PART ==== */
-
 .blog-container {
     display: flex;
     justify-content: space-between;
     background: $secondary-background-color;
     padding-bottom: 50px;
 }
-
 aside {
     width: 35%;
     margin: 50px 50px 0 0;
 }
-
 article {
     width: 65%;
 }
-
 .side-container {
     background: $secondary-background-color;
     position: relative;
 }
-
 .blog-side-image {
     position: relative;
     z-index: 1;
-
 }
-
 .blog-side-image img {
     object-fit: cover;
     width: 100%;
     box-shadow: 15px 15px $primary-background-color
 }
-
 .blog-side-text {
     background: $primary-background-color;
     padding: 30px;
     margin-left: 15px;
     margin-right: -15px;
 }
-
 .blog-post-image {
     margin-left: 30px;
     position: relative;
     top: -130px;
 }
-
 .blog-post-image img {
     box-shadow: -15px 15px $primary-accent-color;
     width: 100%;
     object-fit: cover;
 }
-
 .blog-post {
     border: 5px solid $primary-accent-color;
     border-top: 0;
@@ -376,7 +305,6 @@ article {
     position: relative;
     top: -115px;
 }
-
 aside ul {
     list-style: inside disc;
     font-family: $secondary-font-family;
@@ -384,78 +312,63 @@ aside ul {
     letter-spacing: 1px;
     line-height: 28px;
 }
-
 .date {
     font-weight: 700;
 }
-
 .comments-container {
     padding: 0px 49px 10px 67px;
 }
-
 .comment-one,
 .comment-two {
     display: flex;
     justify-content: space-between;
     margin: 20px 0;
 }
-
 .comment-one > div:first-child,
 .comment-two > div:first-child {
     margin-right: 20px;
 }
-
 .comment-one > div:nth-child(2),
 .comment-two > div:nth-child(2)  {
     width: 90%;
 }
-
 .blog-form-container {
     padding: 20px 49px 50px 67px;
 }
-
 .blog-form-name {
     width: calc((100% / 2) - 10px);
     display: inline-block;
     margin-right: 5px;
 }
-
 .blog-form-email {
     width: calc((100% / 2) - 10px);
     display: inline-block;
     margin-left: 9px;
 }
-
 /* ===== CONTACT PART ==== */
-
 .contact-flex-container {
     display: flex;
     justify-content: space-between;
     background: $secondary-background-color;
 }
-
 .contact-info-container {
     margin: 50px 100px;
 }
-
 .social-links {
     display: flex;
-
-
+}
 .social-links li a {
     color: $primary-accent-color;
     padding-right: 20px;
+    margin-bottom: 20px;
     font-size: 25px;
 }
-
 address {
     font-style: normal;
 }
-
 address p {
     margin: 0;
 }
-
 address a {
     font-family: $secondary-font-family;
     font-size: 20px;
@@ -463,15 +376,12 @@ address a {
     line-height: 28px;
     display: block;
 }
-
 address a:first-child {
     margin-bottom: 30px;
 }
-
 .contact-form-container {
     margin-left: 10px;
 }
-
 .contact-form {
     background: $primary-background-color;
     box-shadow: 15px 15px $primary-accent-color;
@@ -481,19 +391,16 @@ address a:first-child {
     right: 50px;
     width: 50%;
 }
-
 .contact-form-name {
     width: calc((100% / 2) - 10px);
     display: inline-block;
     margin-right: 5px;
 }
-
 .contact-form-email {
     width: calc((100% / 2) - 10px);
     display: inline-block;
     margin-left: 9px;
 }
-
 input[type=text],
 input[type=email] {
     border: none;
@@ -508,13 +415,11 @@ input[type=email] {
     line-height: 28px;
     margin-bottom: 10px;
 }
-
 input::placeholder {
     background: transparent;
     color: $primary-font-color;
     opacity: 1;
 }
-
 textarea,
 textarea::placeholder {
     background: transparent;
@@ -530,8 +435,7 @@ textarea::placeholder {
     letter-spacing: 1px;
     line-height: 28px;
 }
-
-button {
+button[type=submit] {
     border: none;
     text-transform: uppercase;
     font-family: $primary-font-family;
@@ -543,72 +447,46 @@ button {
     margin-top: 10px;
     padding: 5px 0;
 }
-
-
-
-
-
-
-
 /* ------------------------------- 
 MEDIA QUERIES
 ------------------------------- */
-
 /* ------------------------------- 
 Portrait tablet and small desktops 
 ------------------------------- */
-
 @media (max-width: 940px) {
-
     h1 {
         font-size: 52px;
     }
-
     h1 span {
         width: 350px;
     }
-
     .home-header {
         height: 100vh;
     }
-
     /* --- About Section --- */
-
     .about-section {
         padding: 100px 0;
     }
-
 }
-
 /* ------------------------------- 
 Landscape phone to portrait tablet 
 ------------------------------- */
-
 @media (max-width: 768px) {
-
     h1 {
         font-size: 40px;
     }
-
     h1 span {
         width: 270px;
     }
-
     /* --- About Section --- */
-
     .about-section {
         padding: 100px 0;
     }
 }
-
 /* -------------------------------
 Landscape phones and down 
  ------------------------------- */
-
 @media (max-width: 480px) {
 }
-
-
 @media (max-width: 350px) {
-}
 }
