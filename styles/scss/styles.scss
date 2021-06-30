@@ -1,6 +1,6 @@
 @import 'setup';
 @import 'variables';
-@import 'mixins';
+
 /* --- General and Headings --- */
 body {
     background: $primary-background-color;
@@ -130,6 +130,10 @@ nav li {
     padding-bottom: 5px;
     border-bottom: 2px solid $primary-accent-color;
 }
+.mobile-menu {
+    display: none;
+}
+
 /* --- About Section --- */
 .about-section {
     background: $secondary-background-color;
@@ -157,9 +161,7 @@ nav li {
     position: absolute;
     left: -85px;
 }
-* {
-    outline: 1px red solid;
-}
+
 /* --- Profile Section --- */
 .profile-section {
     padding: 70px 0;
@@ -453,7 +455,12 @@ MEDIA QUERIES
 /* ------------------------------- 
 Portrait tablet and small desktops 
 ------------------------------- */
+
 @media (max-width: 940px) {
+
+    p {
+        font-size: 16px;
+    }
     h1 {
         font-size: 52px;
     }
@@ -463,30 +470,145 @@ Portrait tablet and small desktops
     .home-header {
         height: 100vh;
     }
+
+    nav li {
+        padding-right: 10px;
+    }
+
     /* --- About Section --- */
     .about-section {
-        padding: 100px 0;
+        padding: 100px 50px;
     }
+
+    /*=== BLOG PAGE ===*/
+
+    aside ul {
+        font-size: 16px;
+    }
+    
 }
 /* ------------------------------- 
 Landscape phone to portrait tablet 
 ------------------------------- */
 @media (max-width: 768px) {
+
+    /* --- General Styles --- */
     h1 {
         font-size: 40px;
     }
     h1 span {
         width: 270px;
     }
-    /* --- About Section --- */
-    .about-section {
-        padding: 100px 0;
+
+    h2 {
+        font-size: 30px;
     }
+
+    h3 {
+        font-size: 30px
+    }
+
+    h4 {
+        font-size: 20px
+    }
+
+    h5 {
+        font-size: 18px;
+    }
+
+    .header-nav {
+        display: flex;
+        padding-top: 50px;
+        width: 50%;
+        position: relative;
+        top: -1000px;
+    }
+
+    .mobile-menu {
+        position: absolute;
+        left: 30px;
+        top: 30px;
+        font-size: 30px;
+        display: block;
+    }
+
+
+    /* === BLOG PAGE === */
+
+    .blog-container {
+        flex-direction: column;
+        align-items: flex-end;
+    }
+
+    aside {
+        width: 90%;
+    }
+
+    article {
+        width: 90%;
+    }
+
+    .blog-post, .blog-post-image {
+        top: 10px;
+    }
+
+    .comments-container {
+        padding-top: 50px;
+    }
+
+    /* === CONTACT PAGE === */
+
+    .contact-flex-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contact-form {
+        position: static;
+        width: 90%;
+        margin-bottom: 30px;
+    }
+
+    address a,
+    address a:first-child {
+        font-size: 16px;
+    }
+
 }
 /* -------------------------------
 Landscape phones and down 
  ------------------------------- */
 @media (max-width: 480px) {
 }
-@media (max-width: 350px) {
+
+h1 {
+    font-size: 36px;
 }
+
+h1 span {
+    width: 240px;
+}
+
+.about-container-first, 
+.about-container-second {
+    flex-direction: column;
+}
+
+.about-container-first div,
+.about-container-second div {
+    width: calc(100% / 2);
+    margin: 0 30px;
+    position: relative;
+}
+
+
+input[type=text],
+input[type=email], 
+input::placeholder,
+textarea,
+textarea::placeholder,
+button[type=submit] {
+    font-size: 16px;
+}
+
+
