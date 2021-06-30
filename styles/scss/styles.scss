@@ -579,36 +579,59 @@ Landscape phone to portrait tablet
 Landscape phones and down 
  ------------------------------- */
 @media (max-width: 480px) {
+
+    h1 {
+        font-size: 36px;
+    }
+
+    h1 span {
+        width: 240px;
+    }
+
+    .about-container-first, 
+    .about-container-second {
+        flex-direction: column;
+    }
+
+    .about-container-first div,
+    .about-container-second div {
+        width: 100%;
+        margin: 10px 30px;
+    }
+
+    .burgers-text,
+    .something-new-text,
+    .burgers-image,
+    .something-new-image {
+        width: 90%;
+        position: static;
+        margin: 50px 0;
+    }
+
+    .spaces-container {
+        flex-direction: column;
+    }
+
+    .spaces-text {
+        margin-top: 150px;
+    }
+
+    .gallery-container {
+        flex-direction: column;
+    }
+
+    .gallery-container img {
+        padding: 10px 0px;
+    }
+
+    input[type=text],
+    input[type=email], 
+    input::placeholder,
+    textarea,
+    textarea::placeholder,
+    button[type=submit] {
+        font-size: 16px;
+    }
+
 }
-
-h1 {
-    font-size: 36px;
-}
-
-h1 span {
-    width: 240px;
-}
-
-.about-container-first, 
-.about-container-second {
-    flex-direction: column;
-}
-
-.about-container-first div,
-.about-container-second div {
-    width: calc(100% / 2);
-    margin: 0 30px;
-    position: relative;
-}
-
-
-input[type=text],
-input[type=email], 
-input::placeholder,
-textarea,
-textarea::placeholder,
-button[type=submit] {
-    font-size: 16px;
-}
-
 

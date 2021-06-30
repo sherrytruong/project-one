@@ -1254,50 +1254,82 @@ address a:first-child {
 /* -------------------------------
 Landscape phones and down 
  ------------------------------- */
-h1 {
-  font-size: 36px;
-}
+@media (max-width: 480px) {
+  h1 {
+    font-size: 36px;
+  }
 
-h1 span {
-  width: 240px;
-}
+  h1 span {
+    width: 240px;
+  }
 
-.about-container-first,
+  .about-container-first,
 .about-container-second {
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
 
-.about-container-first div,
+  .about-container-first div,
 .about-container-second div {
-  width: calc(100% / 2);
-  margin: 0 30px;
-  position: relative;
-}
+    width: 100%;
+    margin: 10px 30px;
+  }
 
-input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
-  font-size: 16px;
-}
+  .burgers-text,
+.something-new-text,
+.burgers-image,
+.something-new-image {
+    width: 90%;
+    position: static;
+    margin: 50px 0;
+  }
 
-input::-moz-placeholder, textarea::-moz-placeholder {
-  font-size: 16px;
-}
+  .spaces-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
 
-input:-ms-input-placeholder, textarea:-ms-input-placeholder {
-  font-size: 16px;
-}
+  .spaces-text {
+    margin-top: 150px;
+  }
 
-input::-ms-input-placeholder, textarea::-ms-input-placeholder {
-  font-size: 16px;
-}
+  .gallery-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
 
-input[type=text],
+  .gallery-container img {
+    padding: 10px 0px;
+  }
+
+  input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
+    font-size: 16px;
+  }
+
+  input::-moz-placeholder, textarea::-moz-placeholder {
+    font-size: 16px;
+  }
+
+  input:-ms-input-placeholder, textarea:-ms-input-placeholder {
+    font-size: 16px;
+  }
+
+  input::-ms-input-placeholder, textarea::-ms-input-placeholder {
+    font-size: 16px;
+  }
+
+  input[type=text],
 input[type=email],
 input::placeholder,
 textarea,
 textarea::placeholder,
 button[type=submit] {
-  font-size: 16px;
+    font-size: 16px;
+  }
 }
