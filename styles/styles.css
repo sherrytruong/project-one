@@ -598,6 +598,7 @@ img {
 
 .header-side-image {
   position: absolute;
+  z-index: 1;
   right: 0;
   top: 100px;
   width: 44%;
@@ -628,29 +629,36 @@ nav li {
 
 .modal {
   display: none;
-  z-index: 1;
+  position: fixed;
+  top: 0;
+  z-index: 2;
   width: 100%;
   height: 100%;
-  padding-top: 50%;
-  background: rgba(0, 0, 0, 0.5);
+  background: rgba(0, 0, 0, 0.8);
 }
 
 .modal-text {
   border: 5px solid #FFD300;
   color: #FFF;
-  background: #171B0E;
+  background: #2B331B;
   padding: 30px;
   width: 50%;
-  margin: 0 auto;
+  height: auto;
+  margin: 10% auto;
+  position: relative;
 }
 
 .close-modal {
-  color: #FFD300;
+  display: block;
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  font-size: 36px;
 }
 
 .close-modal:hover,
 .close-modal:focus {
-  color: #FFF;
+  color: #FFD300;
 }
 
 .mobile-menu {
