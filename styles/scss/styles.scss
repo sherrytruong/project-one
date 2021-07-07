@@ -134,17 +134,17 @@ nav li {
     display: none;
 }
 
-/* --- About Section --- */
-.about-section {
+/* --- Intro Section --- */
+.intro-section {
     background: $secondary-background-color;
     padding: 190px 0;
 }
-.about-container-first, 
-.about-container-second {
+.intro-container-first, 
+.intro-container-second {
     display: flex;
 }
-.about-container-first div,
-.about-container-second div {
+.intro-container-first div,
+.intro-container-second div {
     width: calc(100% / 2);
     margin: 0 30px;
     position: relative;
@@ -475,8 +475,8 @@ Portrait tablet and small desktops
         padding-right: 10px;
     }
 
-    /* --- About Section --- */
-    .about-section {
+    /* --- Intro Section --- */
+    .intro-section {
         padding: 100px 50px;
     }
 
@@ -588,13 +588,13 @@ Landscape phones and down
         width: 240px;
     }
 
-    .about-container-first, 
-    .about-container-second {
+    .intro-container-first, 
+    .intro-container-second {
         flex-direction: column;
     }
 
-    .about-container-first div,
-    .about-container-second div {
+    .intro-container-first div,
+    .intro-container-second div {
         width: 100%;
         margin: 10px 30px;
     }
