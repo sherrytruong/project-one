@@ -626,6 +626,33 @@ nav li {
   border-bottom: 2px solid #FFD300;
 }
 
+.modal {
+  display: none;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  padding-top: 50%;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.modal-text {
+  border: 5px solid #FFD300;
+  color: #FFF;
+  background: #171B0E;
+  padding: 30px;
+  width: 50%;
+  margin: 0 auto;
+}
+
+.close-modal {
+  color: #FFD300;
+}
+
+.close-modal:hover,
+.close-modal:focus {
+  color: #FFF;
+}
+
 .mobile-menu {
   display: none;
 }
