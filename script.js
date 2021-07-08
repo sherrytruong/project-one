@@ -1,5 +1,4 @@
-// ABOUT LINK POP UP MODAL 
-// Inspired by: https://www.w3schools.com/howto/howto_css_modals.asp
+// ABOUT LINK POP UP MODAL (Inspired by: https://www.w3schools.com/howto/howto_css_modals.asp)
 
 // Get the modal with text
 const popModal = document.getElementById('popup-modal');
@@ -20,3 +19,16 @@ closeModal.addEventListener('click', function(){
     popModal.style.display = "none";
 });
 
+// HAMBURGER MENU
+
+// Get the hamburger button
+const hamburger = document.getElementById('hamburger');
+
+// Get the navigation links
+const navLinks = document.getElementById('nav-mobile-links');
+
+// When user clicks on the hamburger menu, toggle the class name with show to display nav links (toggle between display block and display none)
+hamburger.addEventListener('click', function() {
+    navLinks.classList.toggle('show');
+    hamburger.classList.toggle('show');
+});

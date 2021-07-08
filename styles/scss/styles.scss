@@ -116,7 +116,7 @@ img {
 }
 .header-nav {
     display: flex;
-    padding-top: 50px;
+    padding-top: 40px;
     width: 50%;
 }
 nav li {
@@ -161,8 +161,12 @@ nav li {
 .close-modal:focus {
     color: $primary-accent-color;
 }
-.mobile-menu {
+.mobile-menu-button {
     display: none;
+    background: transparent;
+    border: none;
+    color: #fff;
+    font-size: 24px;
 }
 
 /* --- Intro Section --- */
@@ -548,21 +552,40 @@ Landscape phone to portrait tablet
     }
 
     .header-nav {
-        display: flex;
-        padding-top: 50px;
-        width: 50%;
-        position: relative;
-        top: -1000px;
+        display: none;
+        padding-top: 0px;
     }
 
-    .mobile-menu {
-        position: absolute;
-        left: 30px;
-        top: 30px;
-        font-size: 30px;
+    .header-nav.show {
         display: block;
+        position: absolute;
+        padding-top: 0px;
+        width: 50%;
+        background: rgba(0, 0, 0, 0.96);
     }
 
+    .mobile-menu-button {
+        display: block;
+        padding-top: 25px;
+        font-size: 30px;
+    }
+
+    .mobile-menu-button.show {
+        color: $primary-accent-color;
+    }
+
+    .header-nav a {
+        letter-spacing: 1px; 
+    }
+
+    nav li {
+        padding: 20px;
+        text-align: center;
+    }
+
+    nav li:hover {
+        border-left: 25px solid $primary-accent-color;
+    }
 
     /* === BLOG PAGE === */
 
